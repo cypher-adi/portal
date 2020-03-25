@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://cypher:cypher@ts20portal-xt4wm.mongodb.net/test?retryWrites=true&w=majority"
+}
