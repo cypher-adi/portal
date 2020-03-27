@@ -17,14 +17,6 @@ const UserSchema = new mongoose.Schema({
   avatar: {
     type: String
   },
-  college: {
-    type: String,
-    required: true
-  },
-  year: {
-    type: Number,
-    required: true
-  },
   date: {
     type: Date,
     default: Date.now
