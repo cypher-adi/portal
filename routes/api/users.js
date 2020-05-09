@@ -15,14 +15,12 @@ const User = require('../../models/User');
 router.post(
   '/',
   [
-    check('name', 'Name is required')
-      .not()
-      .isEmpty(),
+    check('name', 'Name is required').not().isEmpty(),
     check('email', 'Please input a valid email').isEmail(),
     check(
       'password',
       'Please enter a password of minimum 6 characters'
-    ).isLength({ min: 6 })
+    ).isLength({ min: 6 }),
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -45,14 +43,14 @@ router.post(
       const avatar = gravatar.url(email, {
         s: '200',
         r: 'pg',
-        d: 'mm'
+        d: 'mm',
       });
 
       user = new User({
         name,
         email,
         avatar,
-        password
+        password,
       });
 
       // Encrpyt password
@@ -66,8 +64,8 @@ router.post(
       // Return jsonwebtoken
       const payload = {
         user: {
-          id: user.id
-        }
+          id: user.id,
+        },
       };
       jwt.sign(
         payload,
