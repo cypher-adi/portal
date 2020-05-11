@@ -3,16 +3,19 @@ const mongoose = require('mongoose');
 const ProfileSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'user'
+    ref: 'user',
+  },
+  bio: {
+    type: String,
   },
   college: {
     type: String,
-    required: true
+    required: true,
   },
   year: {
     type: Number,
-    required: true
-  }
+    required: true,
+  },
 });
 
 module.exports = Profile = mongoose.model('profile', ProfileSchema);

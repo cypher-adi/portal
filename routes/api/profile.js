@@ -12,7 +12,7 @@ const User = require('../../models/User');
 router.get('/me', auth, async (req, res) => {
   try {
     const profile = await Profile.findOne({
-      user: req.user.id
+      user: req.user.id,
     }).populate('user', ['name', 'avatar']);
 
     if (!profile) {
@@ -33,13 +33,9 @@ router.post(
   [
     auth,
     [
-      check('college', 'College is required')
-        .not()
-        .isEmpty(),
-      check('year', 'Year is required')
-        .not()
-        .isEmpty()
-    ]
+      check('college', 'College is required').not().isEmpty(),
+      check('year', 'Year is required').not().isEmpty(),
+    ],
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -47,11 +43,12 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const { college, year } = req.body;
+    const { bio, college, year } = req.body;
 
     //Build profile object
     const profileFields = {};
     profileFields.user = req.user.id;
+    if (bio) profileFields.bio = bio;
     if (college) profileFields.college = college;
     if (year) profileFields.year = year;
 
@@ -99,7 +96,7 @@ router.get('/', async (req, res) => {
 router.get('/user/:user_id', async (req, res) => {
   try {
     const profile = await Profile.findOne({
-      user: req.params.user_id
+      user: req.params.user_id,
     }).populate('user', ['name', 'avatar']);
     if (!profile) return res.status(400).json({ msg: 'Profile not found' });
 
