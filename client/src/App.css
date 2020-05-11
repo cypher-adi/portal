@@ -258,6 +258,14 @@ img {
   border: 1px solid #ccc;
 }
 
+.form input[type='number'] {
+  display: block;
+  width: 30%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
 .form input[type='submit'],
 button {
   font: inherit;
