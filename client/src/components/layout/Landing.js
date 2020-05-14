@@ -14,7 +14,7 @@ const Landing = ({ isAuthenticated }) => {
         <div className='landing-inner'>
           <h1 className='x-large'>DevHub</h1>
           <p className='lead'>
-            A place for you techSavies out there to connect and share common
+            A place for you techSavvies out there to connect and share common
             interests.
           </p>
           <div className='buttons'>
