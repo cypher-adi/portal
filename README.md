@@ -11,6 +11,17 @@ cd ./client
 npm install
 ```
 
+##### Add required data in the config/default.json
+
+```json
+{
+  "mongoURI": "",
+  "jwtSecret": "",
+  "githubClientId": "",
+  "githubSecret": ""
+}
+```
+
 ---
 
 ##### Starting the Application
