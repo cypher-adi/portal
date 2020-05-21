@@ -2,12 +2,18 @@
 
 ## A place for you **TechSavvies** out there to connect and share common interests.
 ---
-##### Installing the necessary Dependencies
+## Installing the necessary Dependencies
+
+### Install server dependencies
+
 ```bash
 npm install
+```
 
-cd ./client
+### Install client dependencies
 
+```bash
+cd client
 npm install
 ```
 
@@ -15,10 +21,9 @@ npm install
 
 ```json
 {
-  "mongoURI": "",
-  "jwtSecret": "",
-  "githubClientId": "",
-  "githubSecret": ""
+  "mongoURI": "<your_mongoDB_Atlas_uri_with_credentials>",
+  "jwtSecret": "secret",
+  "githubToken": "<yoursecrectaccesstoken>"
 }
 ```
 
@@ -42,4 +47,7 @@ npm run client
 ```
 
 
-> Author : ***Aditya Kumar***
+### Author
+
+***Aditya Kumar***
+[Cypher](http://www.cypher-resume.herokuapp.com)
