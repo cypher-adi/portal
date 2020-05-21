@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import moment from 'moment';
 
-const ProfileExperience = ({
-  experience: { company, title, location, current, to, from, description },
+const ProfileEducation = ({
+  education: { school, degree, fieldofstudy, current, to, from, description },
 }) => (
   <div>
-    <h3 className='text-dark'>{company}</h3>
+    <h3 className='text-dark'>{school}</h3>
     <p>
       <Moment format='DD/MM/YYYY'>{moment.utc(from)}</Moment> -{' '}
       {!to ? ' Now' : <Moment format='DD/MM/YYYY'>{moment.utc(to)}</Moment>}
     </p>
     <p>
-      <strong>Position: </strong> {title}
+      <strong>Degree: </strong> {degree}
     </p>
     <p>
-      <strong>Location: </strong> {location}
+      <strong>Field Of Study: </strong> {fieldofstudy}
     </p>
     <p>
       <strong>Description: </strong> {description}
@@ -24,8 +24,8 @@ const ProfileExperience = ({
   </div>
 );
 
-ProfileExperience.propTypes = {
-  experience: PropTypes.object.isRequired,
+ProfileEducation.propTypes = {
+  education: PropTypes.object.isRequired,
 };
 
-export default ProfileExperience;
+export default ProfileEducation;
