@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://cypher:cypher@ts20portal-xt4wm.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken",
-  "githubClientId": "d0f0f7acdb7353370e93",
-  "githubSecret": "2a7e0bafb5e04bad8e04db7ad66a1373053112b3"
-}
