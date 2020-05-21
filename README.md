@@ -11,7 +11,7 @@ cd ./client
 npm install
 ```
 
-##### Add required data in the config/default.json
+##### Create and add required data in the config/default.json
 
 ```json
 {
