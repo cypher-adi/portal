@@ -14,22 +14,39 @@ const Developer = () => {
           <p class='lead'>Full Stack Technoid</p>
           <p>Gorakhpur, UP, IN</p>
           <div class='icons my-1'>
-            <a href='mailto:adityasaha444@gmail.com' target='_blank'>
+            <a
+              href='mailto:adityasaha444@gmail.com'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i class='fas fa-envelope fa-2x'></i>
             </a>
-            <a href='https://www.github.com/cypher-adi' target='_blank'>
+            <a
+              href='https://www.github.com/cypher-adi'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i class='fab fa-github fa-2x'></i>
             </a>
             <a
               href='https://www.linkedin.com/in/aditya-kumar-934943133/'
               target='_blank'
+              rel='noopener noreferrer'
             >
               <i class='fab fa-linkedin fa-2x'></i>
             </a>
-            <a href='https://www.facebook.com/adityasaha444' target='_blank'>
+            <a
+              href='https://www.facebook.com/adityasaha444'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i class='fab fa-facebook fa-2x'></i>
             </a>
-            <a href='https://www.instagram.com/saha_adi_' target='_blank'>
+            <a
+              href='https://www.instagram.com/saha_adi_'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <i class='fab fa-instagram fa-2x'></i>
             </a>
           </div>
