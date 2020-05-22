@@ -60,8 +60,15 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             required
           />
           <small className='form-text'>
-            This site uses Gravatar so if you want a profile image, use a
-            Gravatar email
+            This site uses
+            <a
+              href='https://en.gravatar.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Gravatar
+            </a>
+            so if you want a profile image, use a Gravatar email
           </small>
         </div>
         <div className='form-group'>
